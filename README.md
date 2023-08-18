@@ -18,9 +18,6 @@ Use the following commands to setup the folder structure. This will download and
 Make sure to set `DIR_EK100` as it is linked in the commands. This directory contains the [EPIC-KITCHENS-100 dataset](https://data.bris.ac.uk/data/dataset/2g1n6qdydwa9u22shpxqzp0t8m). It should contain tar files and be in the form `EpicKitchens-100/{pid}/rgb_frames/{vid}.tar` where pid and vid represent the Person ID and Video ID respectively.
 
 ```
-# go to main folder `benchmarking
-cd benchmarking
-
 # annotations
 gdrive_download 15HMb8lo2B3D7Dnb52N4NaZrQv7JbC9Dr
 tar -xzvf annotations.tar.gz
