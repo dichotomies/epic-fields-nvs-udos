@@ -19,18 +19,18 @@ Make sure to set `DIR_EK100` as it is linked in the commands. This directory con
 
 ```
 # annotations
-gdrive_download 15HMb8lo2B3D7Dnb52N4NaZrQv7JbC9Dr
+gdrive download 15HMb8lo2B3D7Dnb52N4NaZrQv7JbC9Dr
 tar -xzvf annotations.tar.gz
 cd annotations
 for x in *; do unzip $x; done
 cd ../
 
 # split
-gdrive_download 14cFk1AY1-n5i38M0QUhxsBqonuMebydY
+gdrive download 14cFk1AY1-n5i38M0QUhxsBqonuMebydY
 tar -xzvf split.tar.gz
 
 # cache
-gdrive_download TODO
+gdrive download TODO
 tar -xzvf cache.tar.gz
 
 # link EpicKitchens-100
