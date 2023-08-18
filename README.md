@@ -4,7 +4,7 @@
 ## About
 
 This repository provides the code to reproduce the results for Task 1 and Task 2 from *EPIC Fields: Marrying 3D Geometry and Video Understanding*. It provides details for
-- [Setting up the required data](#Setup)
+- [Setting up the required data](#setup)
 - [Evaluating Task 1 (NVS)](#task-1-nvs)
 - [Evaluating Task 2 (UDOS)](#task-2-udos)
 
