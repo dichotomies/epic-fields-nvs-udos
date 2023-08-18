@@ -15,7 +15,7 @@ Use the following commands to setup the folder structure. This will download and
 - Dataset split
 - Cache (outputs from models)
 
-Make sure to set `DIR_EK100` as it is linked in the commands. This directory contains the [EpicKitchens-100 dataset](https://data.bris.ac.uk/data/dataset/2g1n6qdydwa9u22shpxqzp0t8m). It should contain tar files and be in the form `EpicKitchens-100/{pid}/rgb_frames/{vid}.tar` where pid and vid represent the Person ID and Video ID respectively.
+Make sure to set `DIR_EK100` as it is linked in the commands. This directory contains the [EPIC-KITCHENS-100 dataset](https://data.bris.ac.uk/data/dataset/2g1n6qdydwa9u22shpxqzp0t8m). It should contain tar files and be in the form `EpicKitchens-100/{pid}/rgb_frames/{vid}.tar` where pid and vid represent the Person ID and Video ID respectively.
 
 ```
 # go to main folder `benchmarking
