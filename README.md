@@ -34,7 +34,7 @@ gdrive download TODO
 tar -xzvf cache.tar.gz
 
 # link EpicKitchens-100
-ln -s $DIR_EK100 .
+ln -s $DIR_EK100 ek100
 ```
 
 ## Task 1: NVS
