@@ -82,13 +82,8 @@ def task_1(efields, dir_output, model_type, action_type, dir_cache, split='test'
             src_tar=None,
         )
 
-    task = 1
-
     motion = 'dynamic'
-
-    dir_results = f'{dir_output}/{split}/task-{task}/{action_type}'
-    dir_results = f'{dir_output}/debug2/{split}/task-{task}/{action_type}'
-
+    dir_results = f'{dir_output}/{split}/{action_type}'
     valid_vids = set([x.split('-')[0] for x in creader.exp2path.keys() if model_type in x])
 
     mean_psnr_scores = {}

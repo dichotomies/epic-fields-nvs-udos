@@ -53,7 +53,8 @@ class EPICFields:
         if os.path.isfile(os.path.join(self.cache_dir, vid, frame)):
             im = Image.open(os.path.join(self.cache_dir, vid, frame))
         else:
-            src = f'/datasets/EpicKitchens-100/{pid}/rgb_frames/{vid}.tar'
+            src = f'ek100/{pid}/rgb_frames/{vid}.tar'
+
             if vid not in self.imreader:
                 self.imreader[vid] = ImageReader(src)
 
@@ -172,7 +173,7 @@ class CacheReader2D():
 
         self.cache = defaultdict(lambda : defaultdict(lambda: defaultdict(dict)))
 
-        src_dir = f'cache/task2-2d/{split}/{scores_type}_scores/'
+        src_dir = f'cache/task2-2d/{split}/soft_scores/'
 
         if is_debug:
             range_max = 5
