@@ -49,6 +49,8 @@ python evaluate_nvs.py --dir_cache=cache/task1 \
 
 Select the model and action type you are interested in.
 
+Alternatively, calculate the results automatically with `sh evaluate_nvs.sh`.
+
 ## Task 2: UDOS
 
 To calculate the results for the UDOS Benchmark, use the following command:
@@ -61,3 +63,8 @@ python evaluate_udos.py --dir_cache=cache/task2 \
 
 This will output segmentations for the three motion types. Evaluate further videos by selecting the corresponding video id (`vid`).
 
+Alternatively, calculate the results automatically with `sh evaluate_udos.sh`.
+
+## Summarising the Results for Both Tasks
+
+To create a summary of the results, use `python summarise.py`.
