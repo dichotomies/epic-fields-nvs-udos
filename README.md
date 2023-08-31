@@ -30,7 +30,7 @@ gdrive download 14cFk1AY1-n5i38M0QUhxsBqonuMebydY
 tar -xzvf split.tar.gz
 
 # cache
-gdrive download TODO
+gdrive download 1uRvVqzBebVTZ9J6YTbr4YeSOx43uLH4x
 tar -xvf cache.tar
 
 # link EpicKitchens-100
