@@ -17,8 +17,11 @@ Use the following commands to setup the folder structure. This will download and
 
 Make sure to set `DIR_EK100` as it is linked in the commands. This directory contains the [EPIC-KITCHENS-100 dataset](https://data.bris.ac.uk/data/dataset/2g1n6qdydwa9u22shpxqzp0t8m). It should contain tar files and be in the form `EpicKitchens-100/{pid}/rgb_frames/{vid}.tar` where pid and vid represent the Person ID and Video ID respectively.
 
+If you don't have a google account or haven't installed gdrive for downloading files from google drive via CLI, then download the files manually with the provided links (they are publicly accessible).
+
 ```
 # annotations
+# https://drive.google.com/file/d/15HMb8lo2B3D7Dnb52N4NaZrQv7JbC9Dr/view?usp=sharing
 gdrive download 15HMb8lo2B3D7Dnb52N4NaZrQv7JbC9Dr
 tar -xzvf annotations.tar.gz
 cd annotations
@@ -26,10 +29,12 @@ for x in *; do unzip $x; done
 cd ../
 
 # split
+# https://drive.google.com/file/d/14cFk1AY1-n5i38M0QUhxsBqonuMebydY/view?usp=sharing
 gdrive download 14cFk1AY1-n5i38M0QUhxsBqonuMebydY
 tar -xzvf split.tar.gz
 
 # cache
+# https://drive.google.com/file/d/1uRvVqzBebVTZ9J6YTbr4YeSOx43uLH4x/view?usp=sharing
 gdrive download 1uRvVqzBebVTZ9J6YTbr4YeSOx43uLH4x
 tar -xvf cache.tar
 
