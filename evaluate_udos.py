@@ -179,7 +179,7 @@ def main(args):
             args.dir_output, args.split, motion,
             args.model, action_type, args.vid, efields, CacheReader,
             CacheReader2D, args.dir_cache,
-            is_debug=True
+            is_debug=False
         )
 
         predictions = [samples[i]['mask_pred'] for i in range(len(samples))]
