@@ -31,7 +31,7 @@ tar -xzvf split.tar.gz
 
 # cache
 gdrive download TODO
-tar -xzvf cache.tar.gz
+tar -xvf cache.tar
 
 # link EpicKitchens-100
 ln -s $DIR_EK100 ek100
