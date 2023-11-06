@@ -21,21 +21,21 @@ If you don't have a google account or haven't installed gdrive for downloading f
 
 ```
 # annotations
-# https://drive.google.com/file/d/15HMb8lo2B3D7Dnb52N4NaZrQv7JbC9Dr/view?usp=sharing
-gdrive download 15HMb8lo2B3D7Dnb52N4NaZrQv7JbC9Dr
+# https://drive.google.com/file/d/1dzP4ECsLNnh721gaPbogSw3OizAcCy_l/view?usp=sharing
+gdrive download 1dzP4ECsLNnh721gaPbogSw3OizAcCy_l
 tar -xzvf annotations.tar.gz
 cd annotations
 for x in *; do unzip $x; done
 cd ../
 
 # split
-# https://drive.google.com/file/d/14cFk1AY1-n5i38M0QUhxsBqonuMebydY/view?usp=sharing
-gdrive download 14cFk1AY1-n5i38M0QUhxsBqonuMebydY
+# https://drive.google.com/file/d/1aUF2M3VHqYP4_zebVdMYNWaikPHRI_XY/view?usp=sharing
+gdrive download 1aUF2M3VHqYP4_zebVdMYNWaikPHRI_XY
 tar -xzvf split.tar.gz
 
 # cache
-# https://drive.google.com/file/d/1uRvVqzBebVTZ9J6YTbr4YeSOx43uLH4x/view?usp=sharing
-gdrive download 1uRvVqzBebVTZ9J6YTbr4YeSOx43uLH4x
+# https://drive.google.com/file/d/1H0T7Qx0Ab4KEDo24CD83DdCip__ssVzS/view?usp=sharing
+gdrive download 1H0T7Qx0Ab4KEDo24CD83DdCip__ssVzS
 tar -xvf cache.tar
 
 # link EpicKitchens-100
