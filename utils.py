@@ -1,12 +1,12 @@
-
-import torch
-import matplotlib.pyplot as plt
-import shutil
-import tarfile
-import cv2 as cv
-import numpy as np
 import io
 import os
+import shutil
+import tarfile
+
+import cv2 as cv
+import matplotlib.pyplot as plt
+import numpy as np
+import torch
 
 
 def blend_mask(im, mask, colour=[1, 0, 0], alpha=0.5, show_im=False):
@@ -39,12 +39,7 @@ def calc_psnr(image_pred, image_gt):
 
 
 def tar2bytearr(tar_member):
-    return np.asarray(
-        bytearray(
-            tar_member.read()
-        ),
-        dtype=np.uint8
-    )
+    return np.asarray(bytearray(tar_member.read()), dtype=np.uint8)
 
 
 class ImageReader:
@@ -55,20 +50,22 @@ class ImageReader:
         self.cv_flag = cv_flag
 
         if os.path.isdir(src):
-            self.src_type = 'dir'
-            self.fpaths = sorted(glob(os.path.join(src, '*')))
-        elif os.path.isfile(src) and os.path.splitext(src)[1] == '.tar':
+            self.src_type = "dir"
+            self.fpaths = sorted(glob(os.path.join(src, "*")))
+        elif os.path.isfile(src) and os.path.splitext(src)[1] == ".tar":
             self.tar = tarfile.open(src)
-            self.src_type = 'tar'
-            self.fpaths = sorted([x for x in self.tar.getnames() if 'frame_' in x and '.jpg' in x])
+            self.src_type = "tar"
+            self.fpaths = sorted(
+                [x for x in self.tar.getnames() if "frame_" in x and ".jpg" in x]
+            )
         else:
-            print('Source has unknown format.')
+            print("Source has unknown format.")
             exit()
 
     def __getitem__(self, k):
-        if self.src_type == 'dir':
+        if self.src_type == "dir":
             im = cv.imread(k, self.cv_flag)
-        elif self.src_type == 'tar':
+        elif self.src_type == "tar":
             member = self.tar.getmember(k)
             tarfile = self.tar.extractfile(member)
             byte_array = tar2bytearr(tarfile)
@@ -83,7 +80,7 @@ class ImageReader:
 
     def save(self, k, dst):
         fn = os.path.split(k)[-1]
-        if self.src_type == 'dir':
+        if self.src_type == "dir":
             shutil.copy(fn, os.path.join(dst, fn))
-        elif self.src_type == 'tar':
+        elif self.src_type == "tar":
             self.tar.extract(self.tar.getmember(k), dst)
