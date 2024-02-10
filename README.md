@@ -8,6 +8,10 @@ This repository provides the code to reproduce the results for Task 1 and Task 2
 - [Evaluating Task 1 (NVS)](#task-1-nvs)
 - [Evaluating Task 2 (UDOS)](#task-2-udos)
 
+## Updates
+
+10.2.24: We updated the annotations. The previous annotations of the first arxiv release can be found [here](https://drive.google.com/file/d/1dzP4ECsLNnh721gaPbogSw3OizAcCy_l/view?usp=sharing). The corresponding git commit for processing the previous annotations can be accessed [here](https://github.com/dichotomies/epic-fields-nvs-udos/tree/24d8ba048f0f13b5b3de4cf5d5f3bd2c4505a5d3).
+
 ## Setup
 
 Use the following commands to setup the folder structure. This will download and extract the
@@ -21,16 +25,16 @@ If you don't have a google account or haven't installed gdrive for downloading f
 
 ```
 # annotations
-# https://drive.google.com/file/d/1dzP4ECsLNnh721gaPbogSw3OizAcCy_l/view?usp=sharing
-gdrive download 1dzP4ECsLNnh721gaPbogSw3OizAcCy_l
+# https://drive.google.com/file/d/1F0-jIYhY_hx4rr5oV3Z8o2V9gaBAIcuz/view?usp=sharing
+gdrive download 1F0-jIYhY_hx4rr5oV3Z8o2V9gaBAIcuz
 tar -xzvf annotations.tar.gz
 cd annotations
 for x in *; do unzip $x; done
 cd ../
 
 # split
-# https://drive.google.com/file/d/1aUF2M3VHqYP4_zebVdMYNWaikPHRI_XY/view?usp=sharing
-gdrive download 1aUF2M3VHqYP4_zebVdMYNWaikPHRI_XY
+# https://drive.google.com/file/d/1af9crxPDR-5JuBK3oX6U8sRSa2VA9Oq1/view?usp=sharing
+gdrive download 1af9crxPDR-5JuBK3oX6U8sRSa2VA9Oq1
 tar -xzvf split.tar.gz
 
 # cache
